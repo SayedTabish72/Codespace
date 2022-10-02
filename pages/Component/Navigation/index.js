@@ -8,6 +8,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import style from "../../../styles/Nav.module.css";
 
 const Navigation = () => {
 // const Push=() => {
@@ -18,8 +19,8 @@ const Navigation = () => {
 // }
   return (
     <div>
-      <div className='navigation'>
-      <Navbar bg="light" expand="sm">
+      <div className={style.Navigation}>
+      <Navbar bg="light" expand="lg">
       <Container fluid>
         <Navbar.Brand>Codespace</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
